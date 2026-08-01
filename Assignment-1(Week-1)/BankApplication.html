@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Banking Application</title>
+    <body>
+        <p id="hover">Welcome to Our Application, Team SBI</p>
+        <p id="steps">Steps to Get Coupon Code:<br>
+            1.Enter the CustomerID<br>
+            2.Click on Validate Customer to Continue<br>
+            3.Click on Register Button to Hide the Steps<br>
+        </p>
+        <script src="functions.js"></script>
+        <script>document.getElementById("hover").addEventListener('mouseover',alerter);</script>
+        <button onclick="hideSteps()">Register</button><br><br>
+        
+        Enter CustomerID:
+        <input id="custID" type="text" placeholder="Enter Customer ID"><br>
+        <button onclick="validateCustomer()">Validate Customer</button>
+        <button onclick="generateCoupon()">GetCoupon</button>
+        <p id="res"></p>
+    </body>
+    </head>
+</html>
